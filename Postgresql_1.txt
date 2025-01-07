@@ -1,0 +1,38 @@
+
+-- Instert Data command
+
+-- INSERT INTO person(id,name,city)
+-- VALUES (101,'Aditya','Chh sambhajinagar');
+
+-- Instert Data single line command
+-- INSERT INTO person VALUES(102,'shubham','Pune');
+
+-- Instert Multiple Data Entry command if parameter is filled full command
+-- INSERT INTO person(id,name,city)
+-- VALUES
+--   (103,'pranav','Mumbai'),
+--   (104,'sarthak','Chennai');
+
+
+
+SELECT * FROM person;
+
+-- use for select specific colume
+ -- SELECT  name,city FROM person;
+
+
+-- Update command
+ -- UPDATE person
+ --   SET city='London'
+ --   WHERE
+ --    name='Aditya';
+
+ 
+-- Delete command
+ --    DELETE FROM person
+	-- WHERE name='pranav';
+
+
+-- Delete command using id  
+	--    DELETE FROM person
+	-- WHERE id=104;

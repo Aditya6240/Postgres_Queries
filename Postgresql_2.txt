@@ -1,0 +1,25 @@
+ -- CREATE TABLE Employees(
+--     Emp_id SERIAL PRIMARY KEY,
+-- 	Fname VARCHAR(100) NOT NULL,
+-- 	Lname VARCHAR(100) NOT NULL,
+-- 	Email VARCHAR(250) NOT NULL UNIQUE,
+-- 	Dept VARCHAR(50) ,
+-- 	Salary DECIMAL(10,2) DEFAULT 30000.00,
+-- 	Hire_Date DATE NOT NULL DEFAULT CURRENT_DATE
+	
+-- )
+
+select * from Employees;
+
+-- Inserting the data
+
+INSERT INTO Employees(Fname,Lname,Email,Dept,salary, hire_date) 
+-- VALUES( 'Raj','Sharma','raj.sharma@example.com','IT',50000.00,'2020-01-15');
+-- VALUES( 'Priya','Singh','Priya.Singh@example.com','HR', 30000.00);
+-- VALUES('Arjun','Verma','arjun.verma@example.com','IT');
+-- VALUES('Sachin','Verma','Sachin.verma@example.com','BPO',120000.00,'2022-5-19');
+-- VALUES('Suman','Patel','S.Patel@example.com','Finance',60000.00,'2018-07-19');
+-- VALUES('Kavita','Rao','Kavita.Rao@example.com','HR',47000.00,'2020-11-10');
+-- VALUES('Neha','Desai','Neha.Desai@example.com','IT',48000.00,'2021-02-21');
+-- VALUES('anjali','mehta','anjali.mehata@example.com','IT',53000.00,'2018-12-03');
+-- VALUES('Vijay','Nair','Vijay.Nair@example.com','BPO',510000.00,'2022-4-12');
