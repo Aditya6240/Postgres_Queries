@@ -1,0 +1,69 @@
+SELECT *FROM employees
+
+
+-----------------------------Where clause-----------------------------------
+-- Select *from employees where emp_id=5;
+
+-- Select *from employees where dept='HR';
+
+-- Select *from employees where salary>=50000;
+
+-- Select *from employees where dept='IT' or dept='BPO';
+
+-- Select *from employees where dept='IT' and salary>=50000;
+
+---------------------------IN---NOT IN----------------------------------------
+
+-- select *from employees where dept IN('IT','HR','BPO');
+
+-- select *from employees where dept NOT IN('IT','HR','BPO');
+
+----------------------BETWEEN--------------------------------------------------
+
+-- select *from employees where salary BETWEEN 30000 and 50000;
+
+
+-----------------------DISTINCT Clause---------------------------------------
+
+-- select DISTINCT dept from employees;
+
+-----------------------ORDER BY--------------------------------- ---------------
+
+-- select *from employees ORDER BY Fname;
+
+-- select *from employees ORDER BY emp_id;
+
+------------------------LIMIT---------------------------------------
+
+-- select *from employees LIMIT 3;
+
+-------------------LIKE-------------------------------------
+-- select *from employees WHERE Fname LIKE 'A%';
+
+-- select *from employees WHERE Fname LIKE '%y';
+
+-- select *from employees WHERE Fname LIKE '%i%';
+
+-- select *from employees WHERE Fname LIKE '_i%';
+
+-- select *from employees WHERE dept LIKE '__';
+
+-- //case insentive for you can use  ILIKE
+-- select *from employees WHERE Fname ILIKE '%RJ%';
+
+
+----------------------Aggregate Function----------------------------------------
+
+-- select count(emp_id) from employees;
+
+-- select count(Fname) from employees;
+
+-- select SUM(salary) from employees;
+
+-- select AVG(salary) from employees;
+
+-- select MIN(salary) from employees;
+
+-- select MAX(salary) from employees;
+
+
