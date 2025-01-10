@@ -1,0 +1,51 @@
+SELECT *FROM employees;
+
+//Q1) find different type of department in database?
+
+select Distinct(dept) from employees;
+
+//Q2) Display records with high low salary?
+
+select *from employees order by salary DESC;
+
+//@3) how to see only top 3 records from a table?
+
+select *from employees LIMIT 3;
+
+//Q4) show records where first name start with letter 'A';
+
+select *from employees where fname LIKE 'A%';
+
+//Q5) show records where length of the lname is 5 char;
+
+select *from employees where Length(lname)<5;
+
+
+-----------------excercise of count group by,min,max and sum and avg--------------
+
+
+1) Find Total no. of employees in database?
+
+select count(emp_id) from employees;
+
+2) Find Total no. of employees in each database?
+
+select dept,count(emp_id) from employees Group by dept;
+
+3) find lowest salary paying;
+
+select  MIN(salary) from employees;
+select  MAX(salary) from employees;
+
+4) find total salary paying in loan department;
+
+select SUM(salary) from employees where dept='BPO';
+
+5) find which employees highest salary; //imp
+
+select *from employees 
+Where
+salary=(select max(salary) from employees);
+
+------------------
+
