@@ -1,0 +1,44 @@
+------------------------------GROUP BY---------------------------------------
+
+-- select dept from employees GROUP BY dept;
+
+-- select dept,COUNT(emp_id) from employees GROUP BY dept;
+
+-- select dept,SUM(salary) from employees GROUP BY dept;
+
+-- select *from employees;
+
+
+-- -----------------------------String Functions--------------
+
+-- SELECT CONCAT(Fname,Lname) from employees;
+
+-- SELECT CONCAT(Fname,Lname) As Fullname from employees;
+-- ----------------------------------------------------------
+
+-- select emp_id,concat_ws(' ',Fname,Lname) As Fullname,dept from  employees;
+-- ------------------------------------------------------------
+-- select substring('Hello word',1,5);
+-- ----------------------------------------
+-- select Replace('Hi aditya','Hi','By');
+-- ----------------------------------------
+-- select Reverse('HI');
+------------------------
+-- select *from employees where Length(Fname)>5;
+-- ---------------------------------------------------
+-- select LEFT('Aditya Jojare',4);
+-- select Right('Aditya Jojare',4);
+-------------------------------------------
+-- select length(Trim(' All '))
+-------------------------------------
+-- select position('om' in 'Thomas');
+-----------------------------------
+-- select CONCAT_WS(':', emp_id, fname, lname, dept) from employees where emp_id=1;
+-------------------------------------------------------------------------------
+-- select concat_ws(':',emp_id,concat_ws(' ',fname,lname),salary) from employees where emp_id=1;
+---------------------------------------------------------------------------------------------------
+-- select concat_ws(':',emp_id,fname,UPPER(dept)) from employees where emp_id=6;
+----------------------------------------------------------------------------------------------------
+-- select concat(substring(dept,1,1),emp_id,fname) from employees where emp_id=1;
+
+ 
