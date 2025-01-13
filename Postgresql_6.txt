@@ -1,0 +1,39 @@
+SELECT *FROM emp;
+
+
+----------------------case expression----------------------------
+
+select fname,salary,
+ case
+ when salary>=50000 Then 'High'
+ Else 'Low'
+ End As sal_cat from emp;
+
+select fname,salary,
+  case
+  when salary>=50000 Then 'High'
+  when salary BETWEEN 40000 And 50000 Then 'Mid'
+  Else 'Low'
+  End as sal_cat
+    from emp;
+
+SELECT fname,salary,
+case
+ when salary>0 Then Round(salary/100)*10
+  End as Bonus
+  from emp;
+
+
+
+select
+  case
+  when salary>=50000 Then 'High'
+  when salary BETWEEN 40000 And 50000 Then 'Mid'
+  Else 'Low'
+  End as sal_cat,COUNT(emp_id)
+    from emp GROUP BY sal_cat;
+
+  
+ 
+ 
+ 
